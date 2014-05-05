@@ -32,16 +32,28 @@ class ProgramTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals($expected, $result);
 	}
 
-	public function testNegative()
+	public function testIsZero()
 	{
-		$expected = -3;
 		$base = 3;
 
 		$target = new Program;
-		$result = $target->negative($base);
+		$result = $target->isZero($base);
 
-		$this->assertEquals($expected, $result);
+		$this->assertFalse($result);
+
 	}
+
+	// public function testNegative()
+	// {
+	// 	$expected = -3;
+	// 	$base = 3;
+
+	// 	$target = new Program;
+	// 	$result = $target->negative($base);
+
+	// 	$this->assertEquals($expected, $result);
+	// }
+
 
 }
 ?>
