@@ -1,5 +1,6 @@
 PHPUnitTestSample
 =================
 
-とりあえずのPHPUnitテスト
-  
+とりあえずのPHPUnitテスト  
+実行前スクリプトに`phpunit test/`でおk  
+ 
